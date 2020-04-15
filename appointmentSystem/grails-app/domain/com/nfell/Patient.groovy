@@ -10,6 +10,14 @@ class Patient {
 	Date dateRegistered;
 	int patientPhone;
 	
+	static hasMany=[prescriptions:Prescription]
+	
+	String toString(){
+
+	return patientName
+
+	}
+	
     static constraints = {
 
 	patientName nullable: false, blank: false
@@ -19,5 +27,6 @@ class Patient {
 	patientID nullable: false, blank: false
 	dateRegistered nullable: false, blank: false
 	patientPhone nullable: false, blank: false, maxSize: 11, minSize: 11
+	
     }
 }

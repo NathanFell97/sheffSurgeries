@@ -7,6 +7,11 @@ class Nurse {
 	String nurseEmail;
 	String nurseOffice;
 	int nursePhone;
+	Surgery nurseSurgery;
+	
+	String toString(){
+
+	return nurseName}
 	
     static constraints = {
 
@@ -15,5 +20,7 @@ class Nurse {
 	nurseEmail nullable: false, blank: false
 	nurseOffice nullable: false, blank: false
 	nursePhone nullable: false, blank: false, maxSize: 11, minSize: 11
+	nurseSurgery blank: false
+	
     }
 }
