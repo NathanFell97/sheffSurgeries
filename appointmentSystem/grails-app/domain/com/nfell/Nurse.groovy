@@ -9,6 +9,9 @@ class Nurse {
 	int nursePhone;
 	Surgery nurseSurgery;
 	
+
+	static hasMany=[doctors:Doctor]
+	static belongsTo=[Doctor]
 	String toString(){
 
 	return nurseName}
@@ -21,6 +24,7 @@ class Nurse {
 	nurseOffice nullable: false, blank: false
 	nursePhone nullable: false, blank: false, maxSize: 11, minSize: 11
 	nurseSurgery blank: false
+	
 	
     }
 }

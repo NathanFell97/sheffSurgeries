@@ -12,8 +12,9 @@ class Doctor {
 	Integer doctorPhone;
 	String bio;
 	Surgery doctorSurgery;
+	
 
-	static hasMany=[prescriptions:Prescription, appointments:Appointment]
+	static hasMany=[prescriptions:Prescription, appointments:Appointment, nurses:Nurse, patients:Patient]
 	
 	String toString(){	
 		return doctorName}
@@ -29,6 +30,7 @@ class Doctor {
 	doctorPhone nullable: false, blank: false, maxSize: 11, minSize: 11
 	bio nullable: false, blank: false
 	doctorSurgery blank: false 
+	
 	
     }
 }

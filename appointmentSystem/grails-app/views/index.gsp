@@ -1,75 +1,132 @@
-<!doctype html>
+ <!doctype html>
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Welcome to SheffSurgeries</title>
 </head>
 <body>
 <content tag="nav">
+	<h1 style="color:white;"> The Home of SheffSurgeries </h1>
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Book Appointment<span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-            <li class="dropdown-item"><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-            <li class="dropdown-item"><a href="#">App version:
-                <g:meta name="info.app.version"/></a>
-            </li>
-            <li role="separator" class="dropdown-divider"></li>
-            <li class="dropdown-item"><a href="#">Grails version:
-                <g:meta name="info.app.grailsVersion"/></a>
-            </li>
-            <li class="dropdown-item"><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-            <li class="dropdown-item"><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-            <li role="separator" class="dropdown-divider"></li>
-            <li class="dropdown-item"><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
+            <li class="dropdown-item"><a href="#">Book Appointment Online</a></li>
+            <li class="dropdown-item"><a href="#">Phone to Book An Appointment</a></li>
+            <li class="dropdown-item"><a href="#">See all available slots</a></li>
         </ul>
     </li>
     <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find Surgery <span class="caret"></span></a>
         <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                <li class="dropdown-item"><a href="#">${plugin.name} - ${plugin.version}</a></li>
-            </g:each>
+            <li class="dropdown-item"><a href="#">Find your closest Surgery</a></li>
+            <li class="dropdown-item"><a href="#">Apply now</a></li>
         </ul>
     </li>
 </content>
 
 <div class="svg" role="presentation">
     <div class="grails-logo-container">
-        <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
+        <asset:image src="skyline.jpg" width="1600" height="1000"/>
     </div>
 </div>
 
 <div id="content" role="main">
     <section class="row colset-2-its">
-        <h1>Welcome to Grails</h1>
+        <h1 style="color:white;"> Welcome to SheffSurgeries | The best Surgery in South Yorkshire</h1>
 
-        <p>
-            Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display
-            whatever content you may choose. Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
+        <p style="color:white;">
+            Welcome to the home of SheffSurgeries the Sheffield based health service. Find everything you need below, from Appointments to Doctors at our Surgeries. 
         </p>
+	<div class="row">
+	<div class="first">
+			<h3 style="color:white;">Surgeries</h3>
 
-        <div id="controllers" role="navigation">
-            <h2>Available Controllers:</h2>
+<p> </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Surgery" action="" style="color:white;">Surgeries</g:link>
+	
+	</button>
+</div>
+
+	<div class="second">
+			<h3 style="color:white;">Doctors </h3>
+
+<p>  </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Doctor" action="" style="color:white;">Doctors</g:link>
+	
+	</button>
+</div>
+
+	<div class="third">
+			<h3 style="color:white;">Nurses </h3>
+
+<p>  </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Nurse" action="" style="color:white;">Nurses</g:link>
+	
+	</button>
+</div>
+
+<div class="fourth">
+			<h3 style="color:white;">Patients</h3>
+
+<p>    </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Patient" action="" style="color:white;">Patients</g:link>
+	
+	</button>
+</div>
+</div>
+
+
+	<div class="row">
+	<div class="first">
+			<h3 style="color:white;">Appointment </h3>
+
+<p>     </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Appointment" action="" style="color:white;">Appointments</g:link>
+	
+	</button>
+</div>
+
+	<div class="second">
+			<h3 style="color:white;">Prescripiton </h3>
+
+<p>     </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Prescription" action="" style="color:white;">Prescriptions</g:link>
+	
+	</button>
+</div>
+
+<div class="third">
+			<h3 style="color:white;">Receptionist </h3>
+
+<p>    </p>
+	<button type="button" class="btn btn-success">
+	
+	<g:link controller="Receptionist" action="" style="color:white;">Receptionists</g:link>
+	
+	</button>
+</div>
+        <!--<div id="controllers" role="navigation">
+            <h3 style="color:white;"> See all our options below:</h3>
             <ul>
                 <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
                     <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
+                        <g:link controller="${c.logicalPropertyName}"style="color:white;">${c.fullName}</g:link>
                     </li>
                 </g:each>
             </ul>
-        </div>
+        </div> -->
     </section>
 </div>
 

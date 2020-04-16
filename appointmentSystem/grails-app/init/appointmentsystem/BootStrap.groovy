@@ -151,12 +151,22 @@ class BootStrap {
 	recepPhone:'01142876790',
 	recepSurgery: Norton).save()
 
-	
-	//DrClarke.addToPrescriptions(DQW)
-	//DrDonald.addToPrescriptions(DQR)
 
-	//Norton.addToReceptionists(Hannah)
+
+	Tracy.addToDoctors(DrClarke)
+	Tracy.addToDoctors(DrDonald)
+	Adam.addToDoctors(DrClarke)
+	Adam.addToDoctors(DrDonald)
 	
+	Tom.addToDoctors(DrClarke)
+	Tom.addToDoctors(DrDonald)
+	Billy.addToDoctors(DrClarke)
+	Billy.addToDoctors(DrDonald)
+	
+	Tom.addToSurgerys(Norton)
+	Tom.addToSurgerys(Hillsborough)
+	Billy.addToSurgerys(Norton)
+	Billy.addToSurgerys(Hillsborough)
 
 	
 

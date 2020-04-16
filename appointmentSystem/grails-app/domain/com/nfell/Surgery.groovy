@@ -12,7 +12,8 @@ class Surgery {
 	String openingTime;
 	
 
-	static hasMany=[receptionists: Receptionist, doctors:Doctor, nurses:Nurse]
+	static hasMany=[receptionists: Receptionist, doctors:Doctor, nurses:Nurse, patients:Patient]
+	
 
 	String toString(){
 
